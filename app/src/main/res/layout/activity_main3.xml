@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <!-- status bar -->
+
+
+    <TextView
+        android:id="@+id/TextViewLoudnessLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_toEndOf="@+id/progressBar"
+        android:layout_toRightOf="@+id/progressBar"></TextView>
+
+    <TextView
+        android:id="@+id/TextViewLoudnessCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_toLeftOf="@+id/progressBar"
+        android:layout_toStartOf="@+id/progressBar"></TextView>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:id="@+id/progressBar"
+        android:progressDrawable="@drawable/progressbar1"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/TextViewLoudnessCurrentStatic"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/TextViewLoudnessCurrentStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Loudness: "
+
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/ButtonStatusIndicator"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/ButtonStatusIndicator"
+        android:text="Status"
+        android:background="@drawable/but_active"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textViewResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
